@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="ed9b792a-effd-4f1d-aadc-02b08914e935" activeEnvironment="Default" name="Cutomer" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="342fd17d-0201-4b82-9d8d-2f4c0900c9d2" wadlVersion="http://wadl.dev.java.net/2009/02" name="PostCustomer" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="CustomerRESTApi" path="/api/Customers" id="578dc8a8-9fff-403c-9b62-86872e1daf1c"><con:settings/><con:parameters/><con:method name="CustomerRESTApi" id="0744e430-b4b3-4e62-ac2c-f58c00f8849c" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:cus="http://appsvr.southcentralus.cloudapp.azure.com/api/Customers">cus:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="7bb46309-1329-4c8f-bd67-65973da3728a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="f3dbd220-28d8-4cde-90aa-7f89b83cfc4e" wadlVersion="http://wadl.dev.java.net/2009/02" name="GetCustomer" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint></con:endpoints><con:resource name="CustomerId" path="/api/Customers/{customerId}" id="1340a995-e9ae-4ead-a255-c7154deec271"><con:settings/><con:parameters><con:parameter><con:name>customerId</con:name><con:value>customerId</con:value><con:style>TEMPLATE</con:style><con:default>customerId</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="CustomerId" id="5316747f-7e04-4ebe-9426-c6fe957fc865" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/2">ns:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="2e352926-6ca6-4dcf-b01f-7e8b9467b387" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/2</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c6fff94f-fa77-4ee3-9cec-d2ecca15f9a8" wadlVersion="http://wadl.dev.java.net/2009/02" name="DeleteCustomer" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint></con:endpoints><con:resource name="CustomerId" path="/api/Customers/{customerId}" id="07409fb3-98dc-49c1-9d81-e4a4007e5e67"><con:settings/><con:parameters><con:parameter><con:name>customerId</con:name><con:value>customerId</con:value><con:style>TEMPLATE</con:style><con:default>customerId</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="CustomerId" id="c2b61c9d-b855-49cf-9c6e-b9a6e46b79e4" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="7a9e940e-d6d9-4d41-8caa-42913614dbed" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="8a8cbdbe-37b4-49f8-903c-6ba4bd43f538" wadlVersion="http://wadl.dev.java.net/2009/02" name="PUT-UpdateCustomer" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint></con:endpoints><con:resource name="CustomerId" path="/api/Customers/{customerId}" id="dc33ad1c-049f-497c-94c1-c1511724b5f1"><con:settings/><con:parameters><con:parameter><con:name>customerId</con:name><con:value>customerId</con:value><con:style>TEMPLATE</con:style><con:default>customerId</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="CustomerId" id="2c65c908-d854-408d-9393-4a2029929af1" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="c6641f0d-8bc0-4e59-a41c-0c2a81bf3c01" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="98212900-cda5-43e5-b53e-fd0dd9fc565b" name="Customer Workflow"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="e162f2b4-b0b2-4d07-9ae8-24b61ce798fc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateCustomerWorkflowWithAutoGeneratedID" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CreateCustomer" id="46813dee-e8b4-41cf-ae11-8a268ecb8f60"><con:settings/><con:config service="PostCustomer" resourcePath="/api/Customers" methodName="CustomerRESTApi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateCustomer" id="7bb46309-1329-4c8f-bd67-65973da3728a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": 0,
+  "firstName": "prince",
+  "lastName": "harjai",
+  "email": "test@test.com",
+  "dateOfBirth": "2018-02-14T15:18:46.87Z",
+  "phoneNumber": "242423"
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers</con:originalUri><con:assertion type="GroovyScriptAssertion" id="ced4dfe2-854a-4132-ab3f-76ed0439e8bc" name="Script Assertion"><con:configuration><scriptText> import groovy.json.JsonSlurper
+ 
+def response = context.expand( '${CreateCustomer#Response}')
+
+def sluper = new JsonSlurper()
+def json = sluper.parseText(response)
+
+def email = json.email
+
+if(email=='test@test.com')
+{
+	assert true
+}
+else
+{
+	assert  false : "Mismatch of emailaddress"
+}
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="TransferCustomerId" id="a749f0cf-7704-480d-9839-63153d2796a8"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>customerid</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>GetCustomer</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>customeridPut</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>UpdateCustomer</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>customerId-delete</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>DeleteCustomoer</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>cutomerid-getdele</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>GetCustomer-AfterDeletion</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>CustomerID-GetAfterPut</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>GetCustomerAfterUpdate</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="GetCustomer" id="1822f874-f659-4233-95d2-53079619059a"><con:settings/><con:config service="GetCustomer" resourcePath="/api/Customers/{customerId}" methodName="CustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCustomer" id="2e352926-6ca6-4dcf-b01f-7e8b9467b387" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/2</con:originalUri><con:assertion type="GroovyScriptAssertion" id="482f9a5d-09f0-468e-bb8d-ff65cab0fc89" name="Script Assertion"><con:configuration><scriptText><![CDATA[import groovy.json.JsonSlurper
+ 
+def response = context.expand( '${GetCustomer#Response}')
+
+def sluper = new JsonSlurper()
+def json = sluper.parseText(response)
+
+def fname = json.firstName
+def lname = json.lastName
+def emailaddress = json.email
+def dob = json.dateOfBirth
+def phone = json.phoneNumber
+
+if((fname=='prince') && (lname=='harjai') && (emailaddress=='test@test.com') && (dob=='2018-02-14T15:18:46.87Z') && (phone==242423))
+	{
+		assert true
+	}
+else
+{
+	assert false
+}]]></scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="FetchCustmerIDGeneratedByAPI" id="aca303ae-2d9d-40cf-a6b7-4108466761d8"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def response = context.expand( '${CreateCustomer#Response}')
+
+def sluper = new JsonSlurper()
+def json = sluper.parseText(response)
+
+def custid = json.id</script></con:config></con:testStep><con:testStep type="restrequest" name="UpdateCustomer" id="f56b8c4d-2554-4cf3-acbf-5164b9132ded"><con:settings/><con:config service="PUT-UpdateCustomer" resourcePath="/api/Customers/{customerId}" methodName="CustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateCustomer" id="c6641f0d-8bc0-4e59-a41c-0c2a81bf3c01" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": ${FetchCustmerIDGeneratedByAPI#result},
+  "firstName": "Testing",
+  "lastName": "Testing",
+  "email": "test1@test.com",
+  "dateOfBirth": "2018-01-14T15:18:46.87Z",
+  "phoneNumber": "9865645"
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/3</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a5445cff-821e-44b1-9bdb-177ddf010619" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='204')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GetCustomerAfterUpdate" id="70775281-e98c-4a68-b5b3-aed0152a4c72"><con:settings/><con:config service="GetCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCustomerAfterUpdate" id="ccd86f5b-7118-45f2-994b-f1c3cb896768" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/3</con:originalUri><con:assertion type="GroovyScriptAssertion" id="22338f6d-dde1-439a-9784-a5826efa2172" name="Script Assertion"><con:configuration><scriptText><![CDATA[import groovy.json.JsonSlurper
+ 
+def response = context.expand( '${GetCustomerAfterUpdate#Response}')
+
+def sluper = new JsonSlurper()
+def json = sluper.parseText(response)
+
+def fname = json.firstName
+def lname = json.lastName
+def emailaddress = json.email
+def dob = json.dateOfBirth
+def phone = json.phoneNumber
+
+if((fname=='Testing') && (lname=='Testing') && (emailaddress=='test1@test.com') && (dob=='2018-01-14T15:18:46.87Z') && (phone==9865645))
+	{
+		assert true
+	}
+else
+{
+	assert false
+}]]></scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="DeleteCustomoer" id="ceafe1b0-f3a0-463f-9dcf-3ab7fb290e2c"><con:settings/><con:config service="DeleteCustomer" resourcePath="/api/Customers/{customerId}" methodName="CustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteCustomoer" id="7a9e940e-d6d9-4d41-8caa-42913614dbed" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/3</con:originalUri><con:assertion type="GroovyScriptAssertion" id="86856053-825f-48ba-9d4d-8f680b91c6ed" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='204')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GetCustomer-AfterDeletion" id="7abce655-e6b2-475a-b3eb-63892ba1b2fe"><con:settings/><con:config service="GetCustomer" resourcePath="/api/Customers/{customerId}" methodName="CustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCustomer-AfterDeletion" id="2e352926-6ca6-4dcf-b01f-7e8b9467b387" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/2</con:originalUri><con:assertion type="GroovyScriptAssertion" id="66d47a4f-ebc0-4a4b-9b68-bbd811226c46" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true
+}
+else
+{
+	assert false
+}
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="23ee0545-ea12-40a5-bcb4-311e14d5b150" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateCurstomerWorkFlowWithDefinedID" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateId" id="6c328afe-79bd-4c38-bf64-e5b820d877bd"><con:settings/><con:config><script>def a  = 34535</script></con:config></con:testStep><con:testStep type="restrequest" name="CreateCustomer" id="cb5cc4cb-6c6b-49a6-a81a-4d4b1416924a"><con:settings/><con:config service="PostCustomer" resourcePath="/api/Customers" methodName="CustomerRESTApi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateCustomer" id="7bb46309-1329-4c8f-bd67-65973da3728a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": ${GenerateId#result},
+  "firstName": "Testing",
+  "lastName": "Soup",
+  "email": "test@test.com",
+  "dateOfBirth": "2018-02-14T15:18:46.870Z",
+  "phoneNumber": "12345"
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers</con:originalUri><con:assertion type="GroovyScriptAssertion" id="b4dfd181-abce-4944-afcd-2f528603a085" name="Script Assertion"><con:configuration><scriptText><![CDATA[import groovy.json.JsonSlurper
+ 
+def response = context.expand( '${CreateCustomer#Response}')
+
+def sluper = new JsonSlurper()
+def json = sluper.parseText(response)
+
+def fname = json.firstName
+def lname = json.lastName
+def emailaddress = json.email
+def dob = json.dateOfBirth
+def phone = json.phoneNumber
+
+if((fname=='Testing') && (lname=='Soup') && (emailaddress=='test@test.com') && (dob=='2018-02-14T15:18:46.87Z') && (phone==12345))
+	{
+		assert true
+	}
+else
+{
+	assert false
+}]]></scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="TransfterGeneratedCustomerID" id="d6e01ba1-5f4f-4d60-8454-a10c239116a9"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>custid</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>GetCustomerDetails</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>custidPut</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>UpdateDetails</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>custidGet</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>GetDetailsAfterUpdate</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>custidDelete</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>DeleteCustomer</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>custidGetafterDelete</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateCustomer</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>customerId</con:targetType><con:targetStep>GetCustomerDetails</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="GetCustomerDetails" id="dc35000c-cbaa-4ce2-9681-22268e539bf9"><con:settings/><con:config service="GetCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCustomerDetails" id="c4cddeae-6172-4385-b72d-06e6ae2fec0e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/100</con:originalUri><con:assertion type="GroovyScriptAssertion" id="be28b080-2df6-49a4-9688-796a1be1c949" name="Script Assertion"><con:configuration><scriptText><![CDATA[import groovy.json.JsonSlurper
+ 
+def response = context.expand( '${GetCustomerDetails#Response}')
+
+def sluper = new JsonSlurper()
+def json = sluper.parseText(response)
+
+def fname = json.firstName
+def lname = json.lastName
+def emailaddress = json.email
+def dob = json.dateOfBirth
+def phone = json.phoneNumber
+
+if((fname=='Testing') && (lname=='Soup') && (emailaddress=='test@test.com') && (dob=='2018-02-14T15:18:46.87Z') && (phone==12345))
+	{
+		assert true
+	}
+else
+{
+	assert false
+}]]></scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="34535" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="UpdateDetails" id="d8ca725e-b36f-4797-9cd5-5bbb11606f10"><con:settings/><con:config service="PUT-UpdateCustomer" resourcePath="/api/Customers/{customerId}" methodName="CustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateDetails" id="c6641f0d-8bc0-4e59-a41c-0c2a81bf3c01" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": ${GenerateId#result},
+  "firstName": "UpdatedName",
+  "lastName": "UpdatedLastName",
+  "email": "test123@test123.com",
+  "dateOfBirth": "2018-02-14T15:18:46.870Z",
+  "phoneNumber": "1234567890"
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/100</con:originalUri><con:assertion type="GroovyScriptAssertion" id="34d27b9b-438d-4bee-ba40-fd4c026f8fed" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='204')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="34535" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GetDetailsAfterUpdate" id="31dabcbc-70fa-4b66-b950-d78ce6c9d0c2"><con:settings/><con:config service="GetCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetDetailsAfterUpdate" id="8252e997-ce27-4d53-858d-df847268a8d6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/100</con:originalUri><con:assertion type="GroovyScriptAssertion" id="b5b9437c-7b0e-4ead-b1fc-53df831fc3a1" name="Script Assertion"><con:configuration><scriptText><![CDATA[import groovy.json.JsonSlurper
+ 
+def response = context.expand( '${GetDetailsAfterUpdate#Response}')
+
+def sluper = new JsonSlurper()
+def json = sluper.parseText(response)
+
+def fname = json.firstName
+def lname = json.lastName
+def emailaddress = json.email
+def dob = json.dateOfBirth
+def phone = json.phoneNumber
+
+if((fname=='UpdatedName') && (lname=='UpdatedLastName') && (emailaddress=='test123@test123.com') && (dob=='2018-02-14T15:18:46.87Z') && (phone==1234567890))
+	{
+		assert true
+	}
+else
+{
+	assert false
+}]]></scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="34535" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="DeleteCustomer" id="32bd46b5-6a1d-47ef-95b2-dab827589cbc"><con:settings/><con:config service="DeleteCustomer" resourcePath="/api/Customers/{customerId}" methodName="CustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteCustomer" id="7a9e940e-d6d9-4d41-8caa-42913614dbed" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/100</con:originalUri><con:assertion type="GroovyScriptAssertion" id="7d84cd14-5840-4144-a17b-9d85fd052c01" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='204')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="34535" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GetDetailsAfterDelete" id="133f0474-0342-4e1f-ac0b-53d1b81d1b6b"><con:settings/><con:config service="GetCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetDetailsAfterDelete" id="8252e997-ce27-4d53-858d-df847268a8d6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/100</con:originalUri><con:assertion type="GroovyScriptAssertion" id="f3f2d9c0-5e10-458f-9e81-88879cb751e1" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="100" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1c37b71f-16e1-45d1-a694-83affb467ed1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCustomer-NegativeCases" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="VerifyResponseWithInvalidID-SpecialChars" id="7c0a8c2a-7304-429b-ae0b-0bc91636eed3"><con:settings/><con:config service="GetCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithInvalidID-SpecialChars" id="9c94407b-6c28-4490-a913-b3beef2f4975" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/%21%40%23%24</con:originalUri><con:assertion type="GroovyScriptAssertion" id="6dfd5c6c-e866-4fca-bc01-bd72cd77a934" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="!@#$$" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithInvalidID-AlphabeticChars" id="a15b0967-2414-4c84-887f-cb64bb9f212b"><con:settings/><con:config service="GetCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithInvalidID-AlphabeticChars" id="9c94407b-6c28-4490-a913-b3beef2f4975" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/%21%40%23%24</con:originalUri><con:assertion type="GroovyScriptAssertion" id="9d0f242a-8149-4ec7-a01f-18dc3323b580" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true : "Expected and Actual Response Code is Matched"
+}
+else
+{
+	assert false : "Actual Code is Mismatched with Expected Code i.e. 404"
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="ABCDEFG" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithBlankInput" id="85c9c020-aa5a-47dd-8909-3de6fa9d40ff"><con:settings/><con:config service="GetCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithBlankInput" id="8df078b0-9248-419e-9838-3867aee02367" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/</con:originalUri><con:assertion type="GroovyScriptAssertion" id="433e6313-51b2-40a2-8ca2-5b0903f8c0ca" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9b428261-ffe4-4237-9e9c-eb0747c01edd" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PostCustomer-NegativeCases" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="VerifyResponseWithInvalidPhoneNumber" id="e31469c8-a92a-40f6-8513-10d9be9ec66c"><con:settings/><con:config service="PostCustomer" resourcePath="/api/Customers" methodName="CustomerRESTApi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithInvalidPhoneNumber" id="7bb46309-1329-4c8f-bd67-65973da3728a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": 102,
+  "firstName": "Testing",
+  "lastName": "Testing",
+  "email": "Testing",
+  "dateOfBirth": "2018-02-14T15:18:46.870Z",
+  "phoneNumber": abc
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a170ff63-12a6-4ded-8771-611627199cbd" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='400')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithInvalidDOB-String" id="4ea71735-b951-4aa9-a747-c3afa4a7379d"><con:settings/><con:config service="PostCustomer" resourcePath="/api/Customers" methodName="CustomerRESTApi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithInvalidDOB-String" id="7bb46309-1329-4c8f-bd67-65973da3728a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": 102,
+  "firstName": "Testing",
+  "lastName": "Testing",
+  "email": "Testing",
+  "dateOfBirth": "Testing",
+  "phoneNumber": 1234
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers</con:originalUri><con:assertion type="GroovyScriptAssertion" id="c5e5f52c-5126-4f6c-bf81-f7aeefc34bd1" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='400')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithoutPhoneNumber" id="5c8f30c2-1f3f-40e6-8861-58a732127c8c"><con:settings/><con:config service="PostCustomer" resourcePath="/api/Customers" methodName="CustomerRESTApi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithoutPhoneNumber" id="7bb46309-1329-4c8f-bd67-65973da3728a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": 102,
+  "firstName": "Testing",
+  "lastName": "Testing",
+  "email": "Testing",
+  "dateOfBirth": "2018-02-14T15:18:46.870Z",
+  "phoneNumber": 
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers</con:originalUri><con:assertion type="GroovyScriptAssertion" id="660ffd4b-7a3d-478a-a5cc-c7d8b4a1cf32" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='400')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithInvalidDOBFormat" id="ff00b199-c72f-4790-bf8b-ce20937674c5"><con:settings/><con:config service="PostCustomer" resourcePath="/api/Customers" methodName="CustomerRESTApi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithInvalidDOBFormat" id="7bb46309-1329-4c8f-bd67-65973da3728a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": 102,
+  "firstName": "Testing",
+  "lastName": "Testing",
+  "email": "Testing",
+  "dateOfBirth": "2018",
+  "phoneNumber": 1234
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers</con:originalUri><con:assertion type="GroovyScriptAssertion" id="6eee4ddb-1dcd-4fd4-8177-cc0635c9f8ea" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='400')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithoutDOB" id="bf46c461-4d2e-4271-94c1-ab49bc3ec177"><con:settings/><con:config service="PostCustomer" resourcePath="/api/Customers" methodName="CustomerRESTApi" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithoutDOB" id="7bb46309-1329-4c8f-bd67-65973da3728a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": 102,
+  "firstName": "Testing",
+  "lastName": "Testing",
+  "email": "Testing",
+  "dateOfBirth": "",
+  "phoneNumber": 1234
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers</con:originalUri><con:assertion type="GroovyScriptAssertion" id="77e3fddb-4b7c-4ab7-8e5a-fbbd0b4a92fd" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='400')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e5368cf6-830a-4242-ba16-b5da63b4b919" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DeleteCustomer-NegativeCases" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="VerifyResponseWithInvalidInpute-SpecialChars" id="3a0c6dab-69d9-4b4d-8d57-b1e31ed8a13a"><con:settings/><con:config service="DeleteCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithInvalidInpute-SpecialChars" id="e71a056f-d710-4d3c-b609-78cbd80723a3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/%21%40%23%24%26</con:originalUri><con:assertion type="GroovyScriptAssertion" id="1eb666a2-b966-402a-89f1-a4d10d96cbdf" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="!@#$&amp;" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithInvalidInput-AlphbeticChars" id="c424aba6-b6be-42ea-b637-93543e527023"><con:settings/><con:config service="DeleteCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithInvalidInput-AlphbeticChars" id="a4f1b7c2-1a5b-4b19-9f0d-22ef1c299adc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/customerId</con:originalUri><con:assertion type="GroovyScriptAssertion" id="02785b8d-184a-4513-8816-67f858b0076c" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="abcdefgh" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithBlankRequest" id="28dc791f-fe50-4ffe-bbd6-139120ecdd99"><con:settings/><con:config service="DeleteCustomer" methodName="CustomerId" resourcePath="/api/Customers/{customerId}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithBlankRequest" id="d3af009b-f9ee-4815-b03b-de1ec4d715b3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request/><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/</con:originalUri><con:assertion type="GroovyScriptAssertion" id="ac9ef34b-0203-4b29-921c-97d1f0cebbaa" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="155a093e-ad4e-4cec-9c58-8ec8c717bbf0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PutCustomer - NegativeCases" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="VerifyResponseWithNonExistingID" id="f2313591-fc77-436f-bf51-cf544d355679"><con:settings/><con:config service="PUT-UpdateCustomer" resourcePath="/api/Customers/{customerId}" methodName="CustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithNonExistingID" id="c6641f0d-8bc0-4e59-a41c-0c2a81bf3c01" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": 93583957302,
+  "firstName": "Prince",
+  "lastName": "Harjai",
+  "email": "prince@test.com",
+  "dateOfBirth": "2018-02-15T07:20:43.265Z",
+  "phoneNumber": 1234
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/abcd</con:originalUri><con:assertion type="GroovyScriptAssertion" id="97cda724-cb38-42b1-a83a-85e2439f8246" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='404')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="93583957302" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="VerifyResponseWithInvalidCustomerID" id="14eaef31-938a-437a-9266-ecb7c5b8c74f"><con:settings/><con:config service="PUT-UpdateCustomer" resourcePath="/api/Customers/{customerId}" methodName="CustomerId" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="VerifyResponseWithInvalidCustomerID" id="c6641f0d-8bc0-4e59-a41c-0c2a81bf3c01" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://appsvr.southcentralus.cloudapp.azure.com:8080</con:endpoint><con:request>{
+  "id": abcd,
+  "firstName": "Prince",
+  "lastName": "Harjai",
+  "email": "prince@test.com",
+  "dateOfBirth": "2018-02-15T07:20:43.265Z",
+  "phoneNumber": 1234
+}</con:request><con:originalUri>http://appsvr.southcentralus.cloudapp.azure.com/api/Customers/abcd</con:originalUri><con:assertion type="GroovyScriptAssertion" id="e02d34a4-9008-4ffd-b553-e68d1154bb5a" name="Script Assertion"><con:configuration><scriptText>def value = messageExchange.responseHeaders["#status#"]
+
+def responsecode=(value =~ "[1-5]\\d\\d")[0]
+
+if(responsecode=='400')
+{
+	assert true
+}
+else
+{
+	assert false
+}</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="customerId" value="abcd" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>customerId</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
